@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Git Score</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Obtenez votre score Git">
+    <meta name="author" content="alexcp">
+
+    <link href="/public/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+      .thumbnail{
+        width:50px;
+        height:50px;
+        float:left;
+        margin-right:10px;
+      }
+      li{
+        list-style-type:none;
+        clear:both;
+      }
+      .score{
+        font-weight:bold;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <h3 class="muted">Git Score</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <h1>Obtenez Votre Score Git</h1>
+        <p class="lead">Vérifié votre réputation sur Github.</p>
+        <div id="get_score">
+        <form id="score"> 
+          <input class="input-large" name="username" type="text" placeholder="Nom d'utilisateur">
+        </form>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <h1>Leader Board</h1>
+        <table class="span6 offset3 table table-striped" id="liste">
+        </table>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>Labo INF2015</p>
+      </div>
+
+    </div>
+
+    <script src="/public/jquery-1.9.1.min.js"></script>
+    <script src="/public/bootstrap.min.js"></script>
+    <script src="/public/underscore-min.js"></script>
+    <script src="/public/javascript.js"></script>
+
+  </body>
+</html>
+
